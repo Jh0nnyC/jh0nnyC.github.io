@@ -4,190 +4,385 @@
 
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
   <meta name="generator" content="2017.0.1.363"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   
   <script type="text/javascript">
    // Update the 'nojs'/'js' class on the html node
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
 
 // Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "require.js", "index.css"], "outOfDate":[]};
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "jquery.musemenu.js", "jquery.musepolyfill.bgsize.js", "webpro.js", "musewpdisclosure.js", "jquery.scrolleffects.js", "jquery.museresponsive.js", "require.js", "index.css"], "outOfDate":[]};
 </script>
   
   <title>Home</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=443350757"/>
-  <link rel="stylesheet" type="text/css" href="css/master_a-master.css?crc=49549666"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?crc=459634884" id="pagesheet"/>
-    <!--HTML Widget code-->
-  
-		<style>
-		#overlaypass {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: #082736;
-			filter:alpha(opacity=50);
-			-moz-opacity:0.5;
-			-khtml-opacity: 0.5;
-			opacity: 1;
-			z-index: 9990000;
-			text-align:center;
-		}
-		.formLogin form{
-			width:95%;
-			max-width:250px;    
-			margin: 0 auto;	
-		}
-		.formLogin{
-			font: 95% Arial, Helvetica, sans-serif;
-			padding: 16px;
-			background: #F7F7F7;
-		}
-		.formLogin h1{
-			padding: 20px 0;
-			font-size: 140%;
-			font-weight: 300;
-			text-align: center;
-			color: #FFFFFF;
-		}
-		.formLogin input[type="text"],
-		.formLogin input[type="date"],
-		.formLogin input[type="datetime"],
-		.formLogin input[type="password"],
-		.formLogin input[type="number"],
-		.formLogin input[type="search"],
-		.formLogin input[type="time"],
-		.formLogin input[type="url"],
-		.formLogin textarea,
-		.formLogin select
-		{
-			-webkit-transition: all 0.30s ease-in-out;
-			-moz-transition: all 0.30s ease-in-out;
-			-ms-transition: all 0.30s ease-in-out;
-			-o-transition: all 0.30s ease-in-out;
-			outline: none;
-			box-sizing: border-box;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			width: 100%;
-			background: #fff;
-			margin-bottom: 4%;
-			border: 1px solid #ccc;
-			padding: 3%;
-			color: #555;
-			font: 95% Arial, Helvetica, sans-serif;
-		}
-		.formLogin input[type="text"]:focus,
-		.formLogin input[type="date"]:focus,
-		.formLogin input[type="datetime"]:focus,
-		.formLogin input[type="password"]:focus,
-		.formLogin input[type="number"]:focus,
-		.formLogin input[type="search"]:focus,
-		.formLogin input[type="time"]:focus,
-		.formLogin input[type="url"]:focus,
-		.formLogin textarea:focus,
-		.formLogin select:focus
-		{
-			box-shadow: 0 0 5px #43D1AF;
-			padding: 3%;
-			border: 1px solid #43D1AF;
-		}
-		.formLogin input[type="submit"],
-		.formLogin input[type="button"]{
-			box-sizing: border-box;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			width: 100%;
-			padding: 3%;
-			background: #FFFFFF;
-			border-bottom: 2px solid #FFFFFF;
-			border-top-style: none;
-			border-right-style: none;
-			border-left-style: none;   
-			color: #FFFFFF;
-		}
-		.formLogin input[type="submit"]:hover,
-		.formLogin input[type="button"]:hover{
-			background: #2EBC99;
-		}
-		#botonlogin, #pass{
-			font-size: 140%;	
-		}
-		#err{
-			color:#FFFFFF;
-		}
-		</style>
-		<div id="overlaypass" class="formLogin">
-			<form>
-			<h1>Parola por favor</h1>
-				<input type="password" id="pass">
-				<input type="submit" id="botonlogin" value="ENTER">
-				<p style="margin-top: 30px;"><span id='err'></span></p>								
-				<div style='width:100%; text-align:center;font-size:10px;'><a target='_blank' href='http://responsive-muse.com/' title='Responsive Muse Widgets and Templates'>Powered by responsive-muse</a></div>				
-			</form>
-		</div>
-		
-
- </head>
+  <link rel="stylesheet" type="text/css" href="css/master_a-master.css?crc=4144012511"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=3816871351" id="pagesheet"/>
+  <!-- IE-only CSS -->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/nomq_preview_master_a-master.css?crc=329267035"/>
+  <link rel="stylesheet" type="text/css" href="css/nomq_index.css?crc=455492922" id="nomq_pagesheet"/>
+  <![endif]-->
+  <!-- JS includes -->
+  <!--[if lt IE 9]>
+  <script src="scripts/html5shiv.js?crc=4241844378" type="text/javascript"></script>
+  <![endif]-->
+   </head>
  <body>
 
-  <div class="clearfix" id="page"><!-- column -->
-   <div class="position_content" id="page_position_content">
-    <div class="size_fixed colelem" id="u222"><!-- custom html -->
+  <div class="breakpoint active" id="bp_infinity" data-min-width="1025"><!-- responsive breakpoint node -->
+   <div class="clearfix" id="page"><!-- column -->
+    <div class="position_content" id="page_position_content">
+     <div class="browser_width colelem shared_content" id="u94-bw" data-content-guid="u94-bw_content">
+      <div id="u94"><!-- group -->
+       <div class="clearfix" id="u94_align_to_page">
+        <img class="grpelem temp_no_img_src" id="u98-4" alt="CALL US: 1234567890" width="237" height="29" data-orig-src="images/u98-4.png?crc=371977085" data-hidpi-src="images/u98-4_2x.png?crc=4291072272" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+       </div>
+      </div>
+     </div>
+     <div class="clearfix colelem" id="pu1801"><!-- group -->
+      <div class="clip_frame grpelem" id="u1801"><!-- image -->
+       <img class="block temp_no_img_src" id="u1801_img" data-orig-src="images/hypesquad-balance-black76x76.png?crc=4167439831" data-hidpi-src="images/hypesquad-balance-black76x76_2x.png?crc=4143924573" alt="" width="76" height="76" src="images/blank.gif?crc=4208392903"/>
+      </div>
+      <nav class="MenuBar clearfix grpelem" id="menuu172"><!-- horizontal box -->
+       <div class="MenuItemContainer borderbox clearfix grpelem" id="u173"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem" id="u176" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u177-4"><!-- rasterized frame --><div id="u177-4_clip"><img class="temp_no_img_src" alt="HOME" width="111" data-orig-src="images/u177-4.png?crc=496818366" data-hidpi-src="images/u177-4_2x.png?crc=4048172601" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem" id="u410"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem" id="u413" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u414-4"><!-- rasterized frame --><div id="u414-4_clip"><img class="temp_no_img_src" alt="ABOUT" width="111" data-orig-src="images/u414-4.png?crc=4116970399" data-hidpi-src="images/u414-4_2x.png?crc=76575531" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem" id="u438"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem" id="u439" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u441-4"><!-- rasterized frame --><div id="u441-4_clip"><img class="temp_no_img_src" alt="PORTFOLIO" width="112" data-orig-src="images/u441-4.png?crc=403823413" data-hidpi-src="images/u441-4_2x.png?crc=4068441690" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem" id="u466"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem" id="u467" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u469-4"><!-- rasterized frame --><div id="u469-4_clip"><img class="temp_no_img_src" alt="PRICING" width="112" data-orig-src="images/u469-4.png?crc=482583659" data-hidpi-src="images/u469-4_2x.png?crc=422380261" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem" id="u522"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem" id="u523" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u524-4"><!-- rasterized frame --><div id="u524-4_clip"><img class="temp_no_img_src" alt="CONTACT" width="112" data-orig-src="images/u524-4.png?crc=3956635098" data-hidpi-src="images/u524-4_2x.png?crc=500416463" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+      </nav>
+     </div>
+     <div class="clearfix colelem" id="pu1714"><!-- group -->
+      <div class="browser_width grpelem shared_content" id="u1714-bw" data-content-guid="u1714-bw_content">
+       <div class="museBGSize" id="u1714"><!-- simple frame --></div>
+      </div>
+      <div class="browser_width grpelem shared_content" id="u1743-bw" data-content-guid="u1743-bw_content">
+       <div id="u1743"><!-- simple frame --></div>
+      </div>
+      <img class="grpelem temp_no_img_src" id="u1746-7" alt="WHETHER IT BE LEGAL OR NOT.. I PUSH THE BOUNDARIES OF PHOTOGRAPHY" width="1081" height="94" data-orig-src="images/u1746-7.png?crc=4283871708" data-hidpi-src="images/u1746-7_2x.png?crc=306246394" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+      <div class="Button clearfix grpelem" id="buttonu1759"><!-- container box -->
+       <img class="grpelem" id="u1760" alt="CONTACT ME" src="images/blank.gif?crc=4208392903"/><!-- state-based BG images -->
+      </div>
+     </div>
+     <div class="verticalspacer shared_content" data-offset-top="873" data-content-above-spacer="873" data-content-below-spacer="62" data-content-guid="page_position_content_3_content"></div>
+     <div class="browser_width colelem" id="u1653-bw">
+      <div id="u1653"><!-- group -->
+       <div class="clearfix" id="u1653_align_to_page">
+        <img class="grpelem temp_no_img_src" id="u1662-4" alt="©2018, Jhonny Doe, All Rights Reserved" width="1024" height="19" data-orig-src="images/u1662-4.png?crc=21352057" data-hidpi-src="images/u1662-4_2x.png?crc=3933302720" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+       </div>
+      </div>
+     </div>
     </div>
-    <div class="clearfix colelem" id="pu94"><!-- group -->
-     <a class="nonblock nontext rounded-corners transition clearfix grpelem" id="u94" href="2nd-home.html" title="vezi ca daca apesi, pleci"><!-- group --><img class="grpelem" id="u121-4" alt="Jhonny" width="206" height="81" src="images/u121-4.png?crc=4178644463" data-hidpi-src="images/u121-4_2x.png?crc=472729285"/><!-- rasterized frame --></a>
-     <div class="rounded-corners grpelem" id="u100"><!-- simple frame --></div>
-    </div>
-    <div class="clearfix colelem" id="pu115"><!-- group -->
-     <div class="grpelem" id="u115"><!-- simple frame --></div>
-     <div class="transition grpelem" id="u173"><!-- simple frame --></div>
-     <div class="transition grpelem" id="u176"><!-- simple frame --></div>
-    </div>
-    <div class="clearfix colelem" id="pu112"><!-- group -->
-     <div class="rounded-corners grpelem" id="u112"><!-- simple frame --></div>
-     <div class="rounded-corners grpelem" id="u118"><!-- simple frame --></div>
-    </div>
-    <div class="verticalspacer" data-offset-top="469" data-content-above-spacer="469" data-content-below-spacer="62"></div>
+   </div>
+   <div class="preload_images">
+    <img class="preload temp_no_img_src" data-orig-src="images/u1760-r.png?crc=3853916343" alt="" src="images/blank.gif?crc=4208392903"/>
+    <img class="preload temp_no_img_src" data-orig-src="images/u1760-r_2x.png?crc=352986162" alt="" src="images/blank.gif?crc=4208392903"/>
    </div>
   </div>
-  <!-- JS includes -->
-  <script type="text/javascript">
-   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
-</script>
-  <script type="text/javascript">
-   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js?crc=209076791" type="text/javascript">\x3C/script>');
-</script>
+  <div class="breakpoint" id="bp_1024" data-min-width="901" data-max-width="1024"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <span class="browser_width colelem placeholder" data-placeholder-for="u94-bw_content"><!-- placeholder node --></span>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu1801"><!-- group -->
+      <div class="clip_frame grpelem temp_no_id" data-orig-id="u1801"><!-- image -->
+       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/hypesquad-balance-black76x76.png?crc=4167439831" data-hidpi-src="images/hypesquad-balance-black76x76_2x.png?crc=4143924573" alt="" data-image-width="76" data-image-height="76" data-orig-id="u1801_img" src="images/blank.gif?crc=4208392903"/>
+      </div>
+      <nav class="MenuBar clearfix grpelem temp_no_id" data-orig-id="menuu172"><!-- horizontal box -->
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u173"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem temp_no_id" href="index.html" data-orig-id="u176"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u177-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u177-4_clip"><img class="temp_no_img_src" alt="HOME" data-orig-src="images/u177-4.png?crc=496818366" data-hidpi-src="images/u177-4_2x.png?crc=4048172601" data-image-width="111" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u410"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem temp_no_id" href="index.html" data-orig-id="u413"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u414-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u414-4_clip"><img class="temp_no_img_src" alt="ABOUT" data-orig-src="images/u414-4.png?crc=4116970399" data-hidpi-src="images/u414-4_2x.png?crc=76575531" data-image-width="111" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u438"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem temp_no_id" href="index.html" data-orig-id="u439"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u441-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u441-4_clip"><img class="temp_no_img_src" alt="PORTFOLIO" data-orig-src="images/u441-4.png?crc=403823413" data-hidpi-src="images/u441-4_2x.png?crc=4068441690" data-image-width="112" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u466"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem temp_no_id" href="index.html" data-orig-id="u467"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u469-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u469-4_clip"><img class="temp_no_img_src" alt="PRICING" data-orig-src="images/u469-4.png?crc=482583659" data-hidpi-src="images/u469-4_2x.png?crc=422380261" data-image-width="112" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u522"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem temp_no_id" href="index.html" data-orig-id="u523"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u524-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u524-4_clip"><img class="temp_no_img_src" alt="CONTACT" data-orig-src="images/u524-4.png?crc=3956635098" data-hidpi-src="images/u524-4_2x.png?crc=500416463" data-image-width="112" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+      </nav>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu1714"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u1714-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u1743-bw_content"><!-- placeholder node --></span>
+      <img class="grpelem temp_no_id temp_no_img_src" alt="WHETHER IT BE LEGAL OR NOT.. I PUSH THE BOUNDARIES OF PHOTOGRAPHY" data-orig-src="images/u1746-72.png?crc=342632931" data-hidpi-src="images/u1746-7_2x2.png?crc=372126797" data-image-width="1024" data-orig-id="u1746-7" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+      <div class="Button clearfix grpelem temp_no_id shared_content" data-orig-id="buttonu1759" data-content-guid="buttonu1759_content"><!-- container box -->
+       <div class="grpelem temp_no_id" data-orig-id="u1760"><!-- state-based BG images -->
+        <img alt="CONTACT ME" src="images/blank.gif?crc=4208392903"/>
+        <div class="fluid_height_spacer"></div>
+       </div>
+      </div>
+     </div>
+     <span class="verticalspacer placeholder" data-placeholder-for="page_position_content_3_content"><!-- placeholder node --></span>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u1653-bw">
+      <div class="temp_no_id" data-orig-id="u1653"><!-- group -->
+       <div class="clearfix temp_no_id" data-orig-id="u1653_align_to_page">
+        <img class="grpelem temp_no_id temp_no_img_src" alt="©2018, Jhonny Doe, All Rights Reserved" data-orig-src="images/u1662-4.png?crc=21352057" data-hidpi-src="images/u1662-4_2x.png?crc=3933302720" data-image-width="1024" data-orig-id="u1662-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="preload_images">
+    <img class="preload temp_no_img_src" data-orig-src="images/u1760-r2.png?crc=3800748187" alt="" src="images/blank.gif?crc=4208392903"/>
+    <img class="preload temp_no_img_src" data-orig-src="images/u1760-r_2x2.png?crc=350813256" alt="" src="images/blank.gif?crc=4208392903"/>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_900" data-min-width="769" data-max-width="900"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <span class="browser_width colelem placeholder" data-placeholder-for="u94-bw_content"><!-- placeholder node --></span>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu1801"><!-- group -->
+      <div class="clip_frame grpelem temp_no_id" data-orig-id="u1801"><!-- image -->
+       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/hypesquad-balance-black67x67.png?crc=202826063" data-hidpi-src="images/hypesquad-balance-black67x67_2x.png?crc=4143924573" alt="" data-image-width="67" data-image-height="67" data-orig-id="u1801_img" src="images/blank.gif?crc=4208392903"/>
+      </div>
+      <nav class="MenuBar clearfix grpelem temp_no_id" data-orig-id="menuu172"><!-- horizontal box -->
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u173"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem temp_no_id" href="index.html" data-orig-id="u176"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u177-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u177-4_clip"><img class="temp_no_img_src" alt="HOME" data-orig-src="images/u177-4.png?crc=496818366" data-hidpi-src="images/u177-4_2x.png?crc=4048172601" data-image-width="98" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u410"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem temp_no_id" href="index.html" data-orig-id="u413"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u414-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u414-4_clip"><img class="temp_no_img_src" alt="ABOUT" data-orig-src="images/u414-4.png?crc=4116970399" data-hidpi-src="images/u414-4_2x.png?crc=76575531" data-image-width="98" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u438"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem temp_no_id" href="index.html" data-orig-id="u439"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u441-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u441-4_clip"><img class="temp_no_img_src" alt="PORTFOLIO" data-orig-src="images/u441-4.png?crc=403823413" data-hidpi-src="images/u441-4_2x.png?crc=4068441690" data-image-width="98" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u466"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem temp_no_id" href="index.html" data-orig-id="u467"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u469-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u469-4_clip"><img class="temp_no_img_src" alt="PRICING" data-orig-src="images/u469-4.png?crc=482583659" data-hidpi-src="images/u469-4_2x.png?crc=422380261" data-image-width="98" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u522"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem temp_no_id" href="index.html" data-orig-id="u523"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u524-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u524-4_clip"><img class="temp_no_img_src" alt="CONTACT" data-orig-src="images/u524-4.png?crc=3956635098" data-hidpi-src="images/u524-4_2x.png?crc=500416463" data-image-width="98" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+      </nav>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu1714"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u1714-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u1743-bw_content"><!-- placeholder node --></span>
+      <img class="grpelem temp_no_id temp_no_img_src" alt="WHETHER IT BE LEGAL OR NOT.. I PUSH THE BOUNDARIES OF PHOTOGRAPHY" data-orig-src="images/u1746-73.png?crc=3847706611" data-hidpi-src="images/u1746-7_2x3.png?crc=17081453" data-image-width="900" data-orig-id="u1746-7" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+      <span class="Button clearfix grpelem placeholder" data-placeholder-for="buttonu1759_content"><!-- placeholder node --></span>
+     </div>
+     <span class="verticalspacer placeholder" data-placeholder-for="page_position_content_3_content"><!-- placeholder node --></span>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u1653-bw">
+      <div class="temp_no_id" data-orig-id="u1653"><!-- group -->
+       <div class="clearfix temp_no_id" data-orig-id="u1653_align_to_page">
+        <img class="grpelem temp_no_id temp_no_img_src" alt="©2018, Jhonny Doe, All Rights Reserved" data-orig-src="images/u1662-4.png?crc=21352057" data-hidpi-src="images/u1662-4_2x.png?crc=3933302720" data-image-width="900" data-orig-id="u1662-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="preload_images">
+    <img class="preload temp_no_img_src" data-orig-src="images/u1760-r3.png?crc=3770634015" alt="" src="images/blank.gif?crc=4208392903"/>
+    <img class="preload temp_no_img_src" data-orig-src="images/u1760-r_2x3.png?crc=141668966" alt="" src="images/blank.gif?crc=4208392903"/>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_768" data-min-width="601" data-max-width="768"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <span class="browser_width colelem placeholder" data-placeholder-for="u94-bw_content"><!-- placeholder node --></span>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu1801"><!-- group -->
+      <div class="clip_frame grpelem temp_no_id" data-orig-id="u1801"><!-- image -->
+       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/hypesquad-balance-black57x57.png?crc=497755715" data-hidpi-src="images/hypesquad-balance-black57x57_2x.png?crc=4058805373" alt="" data-image-width="57" data-image-height="57" data-orig-id="u1801_img" src="images/blank.gif?crc=4208392903"/>
+      </div>
+      <nav class="MenuBar clearfix grpelem temp_no_id" data-orig-id="menuu172"><!-- horizontal box -->
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u173"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem temp_no_id" href="index.html" data-orig-id="u176"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u177-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u177-4_clip"><img class="temp_no_img_src" alt="HOME" data-orig-src="images/u177-4.png?crc=496818366" data-hidpi-src="images/u177-4_2x.png?crc=4048172601" data-image-width="107" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u410"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem temp_no_id" href="index.html" data-orig-id="u413"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u414-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u414-4_clip"><img class="temp_no_img_src" alt="ABOUT" data-orig-src="images/u414-4.png?crc=4116970399" data-hidpi-src="images/u414-4_2x.png?crc=76575531" data-image-width="108" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u438"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem temp_no_id" href="index.html" data-orig-id="u439"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u441-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u441-4_clip"><img class="temp_no_img_src" alt="PORTFOLIO" data-orig-src="images/u441-4.png?crc=403823413" data-hidpi-src="images/u441-4_2x.png?crc=4068441690" data-image-width="108" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u466"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem temp_no_id" href="index.html" data-orig-id="u467"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u469-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u469-4_clip"><img class="temp_no_img_src" alt="PRICING" data-orig-src="images/u469-4.png?crc=482583659" data-hidpi-src="images/u469-4_2x.png?crc=422380261" data-image-width="108" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+       <div class="MenuItemContainer borderbox clearfix grpelem temp_no_id" data-orig-id="u522"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem temp_no_id" href="index.html" data-orig-id="u523"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u524-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u524-4_clip"><img class="temp_no_img_src" alt="CONTACT" data-orig-src="images/u524-4.png?crc=3956635098" data-hidpi-src="images/u524-4_2x.png?crc=500416463" data-image-width="108" src="images/blank.gif?crc=4208392903"/></div></div></a>
+       </div>
+      </nav>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu1714"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u1714-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u1743-bw_content"><!-- placeholder node --></span>
+      <img class="grpelem temp_no_id temp_no_img_src" alt="WHETHER IT BE LEGAL OR NOT.. I PUSH THE BOUNDARIES OF PHOTOGRAPHY" data-orig-src="images/u1746-74.png?crc=3845895191" data-hidpi-src="images/u1746-7_2x4.png?crc=3896883809" data-image-width="768" data-orig-id="u1746-7" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+      <span class="Button clearfix grpelem placeholder" data-placeholder-for="buttonu1759_content"><!-- placeholder node --></span>
+     </div>
+     <div class="verticalspacer" data-offset-top="871" data-content-above-spacer="871" data-content-below-spacer="62"></div>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u1653-bw">
+      <div class="temp_no_id" data-orig-id="u1653"><!-- group -->
+       <div class="clearfix temp_no_id" data-orig-id="u1653_align_to_page">
+        <img class="grpelem temp_no_id temp_no_img_src" alt="©2018, Jhonny Doe, All Rights Reserved" data-orig-src="images/u1662-4.png?crc=21352057" data-hidpi-src="images/u1662-4_2x.png?crc=3933302720" data-image-width="768" data-orig-id="u1662-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="preload_images">
+    <img class="preload temp_no_img_src" data-orig-src="images/u1760-r4.png?crc=3980582524" alt="" src="images/blank.gif?crc=4208392903"/>
+    <img class="preload temp_no_img_src" data-orig-src="images/u1760-r_2x4.png?crc=4116536994" alt="" src="images/blank.gif?crc=4208392903"/>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_600" data-min-width="481" data-max-width="600"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <span class="browser_width colelem placeholder" data-placeholder-for="u94-bw_content"><!-- placeholder node --></span>
+     <div class="clearfix colelem" id="ppu1149"><!-- group -->
+      <div class="clearfix grpelem shared_content" id="pu1149" data-content-guid="pu1149_content"><!-- column -->
+       <div class="colelem shared_content" id="u1149" data-content-guid="u1149_content"><!-- simple frame --></div>
+       <div class="colelem shared_content" id="u1155" data-content-guid="u1155_content"><!-- simple frame --></div>
+       <div class="colelem shared_content" id="u1171" data-content-guid="u1171_content"><!-- simple frame --></div>
+      </div>
+      <div class="browser_width grpelem" id="accordionu1034-bw">
+       <ul class="AccordionWidget clearfix" id="accordionu1034"><!-- vertical box -->
+        <li class="AccordionPanel clearfix colelem100" id="u1035"><!-- vertical box --><div class="AccordionPanelTab clearfix colelem100" id="u1038-3"><!-- content --><p class="shared_content" data-content-guid="u1038-3_0_content">&nbsp;</p></div><div class="AccordionPanelContent disn clearfix colelem100" id="u1036"><!-- group --><nav class="MenuBar clearfix grpelem" id="menuu1270"><!-- vertical box --><div class="MenuItemContainer borderbox clearfix colelem" id="u1271"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix grpelem" id="u1274" href="index.html"><!-- horizontal box --><div class="MenuItemLabel grpelem" id="u1276-4"><!-- rasterized frame --><div id="u1276-4_clip"><img class="temp_no_img_src" alt="HOME" data-orig-src="images/u1276-4.png?crc=4294874370" data-hidpi-src="images/u1276-4_2x.png?crc=54507085" data-image-width="600" src="images/blank.gif?crc=4208392903"/></div></div></a></div><div class="MenuItemContainer borderbox clearfix colelem" id="u1361"><!-- horizontal box --><div class="MenuItem MenuItemWithSubMenu borderbox clearfix grpelem" id="u1362"><!-- horizontal box --><div class="MenuItemLabel grpelem" id="u1363-4"><!-- rasterized frame --><div id="u1363-4_clip"><img class="temp_no_img_src" alt="ABOUT" data-orig-src="images/u1363-4.png?crc=4066946164" data-hidpi-src="images/u1363-4_2x.png?crc=161224159" data-image-width="600" src="images/blank.gif?crc=4208392903"/></div></div></div></div><div class="MenuItemContainer borderbox clearfix colelem" id="u1449"><!-- horizontal box --><div class="MenuItem MenuItemWithSubMenu borderbox clearfix grpelem" id="u1450"><!-- horizontal box --><div class="MenuItemLabel grpelem" id="u1451-4"><!-- rasterized frame --><div id="u1451-4_clip"><img class="temp_no_img_src" alt="PORTFOLIO" data-orig-src="images/u1451-4.png?crc=3972564867" data-hidpi-src="images/u1451-4_2x.png?crc=49220904" data-image-width="600" src="images/blank.gif?crc=4208392903"/></div></div></div></div><div class="MenuItemContainer borderbox clearfix colelem" id="u1515"><!-- horizontal box --><div class="MenuItem MenuItemWithSubMenu borderbox clearfix grpelem" id="u1518"><!-- horizontal box --><div class="MenuItemLabel grpelem" id="u1521-4"><!-- rasterized frame --><div id="u1521-4_clip"><img class="temp_no_img_src" alt="PRICING" data-orig-src="images/u1521-4.png?crc=3795679462" data-hidpi-src="images/u1521-4_2x.png?crc=3959819129" data-image-width="600" src="images/blank.gif?crc=4208392903"/></div></div></div></div><div class="MenuItemContainer borderbox clearfix colelem" id="u1578"><!-- horizontal box --><div class="MenuItem MenuItemWithSubMenu borderbox clearfix grpelem" id="u1581"><!-- horizontal box --><div class="MenuItemLabel grpelem" id="u1583-4"><!-- rasterized frame --><div id="u1583-4_clip"><img class="temp_no_img_src" alt="CONTACT" data-orig-src="images/u1583-4.png?crc=28293630" data-hidpi-src="images/u1583-4_2x.png?crc=3814224907" data-image-width="600" src="images/blank.gif?crc=4208392903"/></div></div></div></div></nav></div></li>
+       </ul>
+      </div>
+      <div class="clip_frame grpelem temp_no_id" data-orig-id="u1801"><!-- image -->
+       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/hypesquad-balance-black37x37.png?crc=35375775" data-hidpi-src="images/hypesquad-balance-black37x37_2x.png?crc=279475620" alt="" data-image-width="37" data-image-height="37" data-orig-id="u1801_img" src="images/blank.gif?crc=4208392903"/>
+      </div>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu1714"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u1714-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u1743-bw_content"><!-- placeholder node --></span>
+      <img class="grpelem temp_no_id temp_no_img_src" alt="WHETHER IT BE LEGAL OR NOT.. I PUSH THE BOUNDARIES OF PHOTOGRAPHY" data-orig-src="images/u1746-75.png?crc=4170882631" data-hidpi-src="images/u1746-7_2x5.png?crc=4112082641" data-image-width="600" data-orig-id="u1746-7" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+      <span class="Button clearfix grpelem placeholder" data-placeholder-for="buttonu1759_content"><!-- placeholder node --></span>
+     </div>
+     <div class="verticalspacer shared_content" data-offset-top="828" data-content-above-spacer="828" data-content-below-spacer="62" data-content-guid="page_position_content_3_content1"></div>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u1653-bw">
+      <div class="temp_no_id" data-orig-id="u1653"><!-- group -->
+       <div class="clearfix temp_no_id" data-orig-id="u1653_align_to_page">
+        <img class="grpelem temp_no_id temp_no_img_src" alt="©2018, Jhonny Doe, All Rights Reserved" data-orig-src="images/u1662-4.png?crc=21352057" data-hidpi-src="images/u1662-4_2x.png?crc=3933302720" data-image-width="600" data-orig-id="u1662-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="preload_images">
+    <img class="preload temp_no_img_src" data-orig-src="images/u1760-r5.png?crc=113427437" alt="" src="images/blank.gif?crc=4208392903"/>
+    <img class="preload temp_no_img_src" data-orig-src="images/u1760-r_2x5.png?crc=4164623657" alt="" src="images/blank.gif?crc=4208392903"/>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_480" data-min-width="321" data-max-width="480"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <span class="browser_width colelem placeholder" data-placeholder-for="u94-bw_content"><!-- placeholder node --></span>
+     <div class="clearfix colelem temp_no_id" data-orig-id="ppu1149"><!-- group -->
+      <span class="clearfix grpelem placeholder" data-placeholder-for="pu1149_content"><!-- placeholder node --></span>
+      <div class="browser_width grpelem temp_no_id" data-orig-id="accordionu1034-bw">
+       <ul class="AccordionWidget clearfix temp_no_id" data-orig-id="accordionu1034"><!-- vertical box -->
+        <li class="AccordionPanel clearfix colelem100 temp_no_id" data-orig-id="u1035"><!-- vertical box --><div class="AccordionPanelTab clearfix colelem100 temp_no_id" data-orig-id="u1038-3"><!-- content --><span class="placeholder" data-placeholder-for="u1038-3_0_content"><!-- placeholder node --></span></div><div class="AccordionPanelContent disn clearfix colelem100 temp_no_id" data-orig-id="u1036"><!-- group --><nav class="MenuBar clearfix grpelem temp_no_id" data-orig-id="menuu1270"><!-- vertical box --><div class="MenuItemContainer borderbox clearfix colelem temp_no_id" data-orig-id="u1271"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix grpelem temp_no_id" href="index.html" data-orig-id="u1274"><!-- horizontal box --><div class="MenuItemLabel grpelem temp_no_id" data-orig-id="u1276-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u1276-4_clip"><img class="temp_no_img_src" alt="HOME" data-orig-src="images/u1276-4.png?crc=4294874370" data-hidpi-src="images/u1276-4_2x.png?crc=54507085" data-image-width="600" src="images/blank.gif?crc=4208392903"/></div></div></a></div><div class="MenuItemContainer borderbox clearfix colelem temp_no_id" data-orig-id="u1361"><!-- horizontal box --><div class="MenuItem MenuItemWithSubMenu borderbox clearfix grpelem temp_no_id" data-orig-id="u1362"><!-- horizontal box --><div class="MenuItemLabel grpelem temp_no_id" data-orig-id="u1363-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u1363-4_clip"><img class="temp_no_img_src" alt="ABOUT" data-orig-src="images/u1363-4.png?crc=4066946164" data-hidpi-src="images/u1363-4_2x.png?crc=161224159" data-image-width="600" src="images/blank.gif?crc=4208392903"/></div></div></div></div><div class="MenuItemContainer borderbox clearfix colelem temp_no_id" data-orig-id="u1449"><!-- horizontal box --><div class="MenuItem MenuItemWithSubMenu borderbox clearfix grpelem temp_no_id" data-orig-id="u1450"><!-- horizontal box --><div class="MenuItemLabel grpelem temp_no_id" data-orig-id="u1451-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u1451-4_clip"><img class="temp_no_img_src" alt="PORTFOLIO" data-orig-src="images/u1451-4.png?crc=3972564867" data-hidpi-src="images/u1451-4_2x.png?crc=49220904" data-image-width="600" src="images/blank.gif?crc=4208392903"/></div></div></div></div><div class="MenuItemContainer borderbox clearfix colelem temp_no_id" data-orig-id="u1515"><!-- horizontal box --><div class="MenuItem MenuItemWithSubMenu borderbox clearfix grpelem temp_no_id" data-orig-id="u1518"><!-- horizontal box --><div class="MenuItemLabel grpelem temp_no_id" data-orig-id="u1521-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u1521-4_clip"><img class="temp_no_img_src" alt="PRICING" data-orig-src="images/u1521-4.png?crc=3795679462" data-hidpi-src="images/u1521-4_2x.png?crc=3959819129" data-image-width="600" src="images/blank.gif?crc=4208392903"/></div></div></div></div><div class="MenuItemContainer borderbox clearfix colelem temp_no_id" data-orig-id="u1578"><!-- horizontal box --><div class="MenuItem MenuItemWithSubMenu borderbox clearfix grpelem temp_no_id" data-orig-id="u1581"><!-- horizontal box --><div class="MenuItemLabel grpelem temp_no_id" data-orig-id="u1583-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u1583-4_clip"><img class="temp_no_img_src" alt="CONTACT" data-orig-src="images/u1583-4.png?crc=28293630" data-hidpi-src="images/u1583-4_2x.png?crc=3814224907" data-image-width="600" src="images/blank.gif?crc=4208392903"/></div></div></div></div></nav></div></li>
+       </ul>
+      </div>
+      <div class="clip_frame grpelem temp_no_id" data-orig-id="u1801"><!-- image -->
+       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/hypesquad-balance-black30x30.png?crc=535109973" data-hidpi-src="images/hypesquad-balance-black30x30_2x.png?crc=523086712" alt="" data-image-width="30" data-image-height="30" data-orig-id="u1801_img" src="images/blank.gif?crc=4208392903"/>
+      </div>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu1714"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u1714-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u1743-bw_content"><!-- placeholder node --></span>
+      <img class="grpelem temp_no_id temp_no_img_src" alt="WHETHER IT BE LEGAL OR NOT.. I PUSH THE BOUNDARIES OF PHOTOGRAPHY" data-orig-src="images/u1746-76.png?crc=3829559179" data-hidpi-src="images/u1746-7_2x6.png?crc=3912928844" data-image-width="480" data-orig-id="u1746-7" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+      <span class="Button clearfix grpelem placeholder" data-placeholder-for="buttonu1759_content"><!-- placeholder node --></span>
+     </div>
+     <span class="verticalspacer placeholder" data-placeholder-for="page_position_content_3_content1"><!-- placeholder node --></span>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u1653-bw">
+      <div class="temp_no_id" data-orig-id="u1653"><!-- group -->
+       <div class="clearfix temp_no_id" data-orig-id="u1653_align_to_page">
+        <img class="grpelem temp_no_id temp_no_img_src" alt="©2018, Jhonny Doe, All Rights Reserved" data-orig-src="images/u1662-4.png?crc=21352057" data-hidpi-src="images/u1662-4_2x.png?crc=3933302720" data-image-width="480" data-orig-id="u1662-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="preload_images">
+    <img class="preload temp_no_img_src" data-orig-src="images/u1760-r6.png?crc=3941160444" alt="" src="images/blank.gif?crc=4208392903"/>
+    <img class="preload temp_no_img_src" data-orig-src="images/u1760-r_2x6.png?crc=4079634298" alt="" src="images/blank.gif?crc=4208392903"/>
+   </div>
+  </div>
+  <div class="breakpoint" id="bp_320" data-max-width="320"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="position_content temp_no_id" data-orig-id="page_position_content">
+     <div class="browser_width colelem temp_no_id" data-orig-id="u94-bw">
+      <div class="temp_no_id" data-orig-id="u94"><!-- group -->
+       <div class="clearfix temp_no_id" data-orig-id="u94_align_to_page">
+        <img class="grpelem temp_no_id temp_no_img_src" alt="CALL US: 1234567890" width="118" height="14" data-orig-src="images/u98-4.png?crc=371977085" data-hidpi-src="images/u98-4_2x.png?crc=4291072272" data-orig-id="u98-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+       </div>
+      </div>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu1149"><!-- group -->
+      <span class="grpelem placeholder" data-placeholder-for="u1149_content"><!-- placeholder node --></span>
+      <div class="clearfix grpelem" id="pu1171"><!-- column -->
+       <span class="colelem placeholder" data-placeholder-for="u1171_content"><!-- placeholder node --></span>
+       <span class="colelem placeholder" data-placeholder-for="u1155_content"><!-- placeholder node --></span>
+      </div>
+      <div class="browser_width grpelem temp_no_id" data-orig-id="accordionu1034-bw">
+       <ul class="AccordionWidget clearfix temp_no_id" data-orig-id="accordionu1034"><!-- vertical box -->
+        <li class="AccordionPanel clearfix colelem100 temp_no_id" data-orig-id="u1035"><!-- vertical box --><div class="AccordionPanelTab clearfix colelem100 temp_no_id" data-orig-id="u1038-3"><!-- content --><span class="placeholder" data-placeholder-for="u1038-3_0_content"><!-- placeholder node --></span></div><div class="AccordionPanelContent disn clearfix colelem100 temp_no_id" data-orig-id="u1036"><!-- group --><nav class="MenuBar clearfix grpelem temp_no_id" data-orig-id="menuu1270"><!-- vertical box --><div class="MenuItemContainer borderbox clearfix colelem temp_no_id" data-orig-id="u1271"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix grpelem temp_no_id" href="index.html" data-orig-id="u1274"><!-- horizontal box --><div class="MenuItemLabel grpelem temp_no_id" data-orig-id="u1276-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u1276-4_clip"><img class="temp_no_img_src" alt="HOME" data-orig-src="images/u1276-4.png?crc=4294874370" data-hidpi-src="images/u1276-4_2x.png?crc=54507085" data-image-width="320" src="images/blank.gif?crc=4208392903"/></div></div></a></div><div class="MenuItemContainer borderbox clearfix colelem temp_no_id" data-orig-id="u1361"><!-- horizontal box --><div class="MenuItem MenuItemWithSubMenu borderbox clearfix grpelem temp_no_id" data-orig-id="u1362"><!-- horizontal box --><div class="MenuItemLabel grpelem temp_no_id" data-orig-id="u1363-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u1363-4_clip"><img class="temp_no_img_src" alt="ABOUT" data-orig-src="images/u1363-4.png?crc=4066946164" data-hidpi-src="images/u1363-4_2x.png?crc=161224159" data-image-width="320" src="images/blank.gif?crc=4208392903"/></div></div></div></div><div class="MenuItemContainer borderbox clearfix colelem temp_no_id" data-orig-id="u1449"><!-- horizontal box --><div class="MenuItem MenuItemWithSubMenu borderbox clearfix grpelem temp_no_id" data-orig-id="u1450"><!-- horizontal box --><div class="MenuItemLabel grpelem temp_no_id" data-orig-id="u1451-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u1451-4_clip"><img class="temp_no_img_src" alt="PORTFOLIO" data-orig-src="images/u1451-4.png?crc=3972564867" data-hidpi-src="images/u1451-4_2x.png?crc=49220904" data-image-width="320" src="images/blank.gif?crc=4208392903"/></div></div></div></div><div class="MenuItemContainer borderbox clearfix colelem temp_no_id" data-orig-id="u1515"><!-- horizontal box --><div class="MenuItem MenuItemWithSubMenu borderbox clearfix grpelem temp_no_id" data-orig-id="u1518"><!-- horizontal box --><div class="MenuItemLabel grpelem temp_no_id" data-orig-id="u1521-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u1521-4_clip"><img class="temp_no_img_src" alt="PRICING" data-orig-src="images/u1521-4.png?crc=3795679462" data-hidpi-src="images/u1521-4_2x.png?crc=3959819129" data-image-width="320" src="images/blank.gif?crc=4208392903"/></div></div></div></div><div class="MenuItemContainer borderbox clearfix colelem temp_no_id" data-orig-id="u1578"><!-- horizontal box --><div class="MenuItem MenuItemWithSubMenu borderbox clearfix grpelem temp_no_id" data-orig-id="u1581"><!-- horizontal box --><div class="MenuItemLabel grpelem temp_no_id" data-orig-id="u1583-4"><!-- rasterized frame --><div class="temp_no_id" data-orig-id="u1583-4_clip"><img class="temp_no_img_src" alt="CONTACT" data-orig-src="images/u1583-4.png?crc=28293630" data-hidpi-src="images/u1583-4_2x.png?crc=3814224907" data-image-width="320" src="images/blank.gif?crc=4208392903"/></div></div></div></div></nav></div></li>
+       </ul>
+      </div>
+      <div class="clip_frame grpelem temp_no_id" data-orig-id="u1801"><!-- image -->
+       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/hypesquad-balance-black24x24.png?crc=4123043914" data-hidpi-src="images/hypesquad-balance-black24x24_2x.png?crc=3783516946" alt="" data-image-width="24" data-image-height="24" data-orig-id="u1801_img" src="images/blank.gif?crc=4208392903"/>
+      </div>
+     </div>
+     <div class="clearfix colelem temp_no_id" data-orig-id="pu1714"><!-- group -->
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u1714-bw_content"><!-- placeholder node --></span>
+      <span class="browser_width grpelem placeholder" data-placeholder-for="u1743-bw_content"><!-- placeholder node --></span>
+      <img class="grpelem temp_no_id temp_no_img_src" alt="WHETHER IT BE LEGAL OR NOT.. I PUSH THE BOUNDARIES OF PHOTOGRAPHY" data-orig-src="images/u1746-77.png?crc=3903034834" data-hidpi-src="images/u1746-7_2x7.png?crc=11677670" data-image-width="320" data-orig-id="u1746-7" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+      <span class="Button clearfix grpelem placeholder" data-placeholder-for="buttonu1759_content"><!-- placeholder node --></span>
+     </div>
+     <span class="verticalspacer placeholder" data-placeholder-for="page_position_content_3_content1"><!-- placeholder node --></span>
+     <div class="browser_width colelem temp_no_id" data-orig-id="u1653-bw">
+      <div class="temp_no_id" data-orig-id="u1653"><!-- group -->
+       <div class="clearfix temp_no_id" data-orig-id="u1653_align_to_page">
+        <img class="grpelem temp_no_id temp_no_img_src" alt="©2018, Jhonny Doe, All Rights Reserved" data-orig-src="images/u1662-4.png?crc=21352057" data-hidpi-src="images/u1662-4_2x.png?crc=3933302720" data-image-width="320" data-orig-id="u1662-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="preload_images">
+    <img class="preload temp_no_img_src" data-orig-src="images/u1760-r7.png?crc=3875907065" alt="" src="images/blank.gif?crc=4208392903"/>
+    <img class="preload temp_no_img_src" data-orig-src="images/u1760-r_2x7.png?crc=4121216607" alt="" src="images/blank.gif?crc=4208392903"/>
+   </div>
+  </div>
   <!-- Other scripts -->
   <script type="text/javascript">
    window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
 16);return 0},g=function(g){for(var f=document.getElementsByTagName("link"),h=0;h<f.length;h++)if("text/css"==f[h].type){var i=(f[h].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!i||!i[1]||!i[2])break;b[i[1]]=i[2]}f=document.createElement("div");f.className="version";f.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(f);for(h=0;h<Muse.assets.required.length;){var i=Muse.assets.required[h],l=i.match(/([\w\-\.]+)\.(\w+)$/),k=l&&l[1]?
 l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
 f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?setTimeout(function(){g(!0)},5E3):g()}};
-var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.watch"],function(d){var $ = d;$(document).ready(function(){try{
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.watch","jquery.musemenu","jquery.musepolyfill.bgsize","webpro","musewpdisclosure","jquery.scrolleffects","jquery.museresponsive"],function(d){var $ = d;$(document).ready(function(){try{
 window.Muse.assets.check($);/* body */
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.detectScreenResolution();/* HiDPI screens */
 Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
 Muse.Utils.fullPage('#page');/* 100% height page */
-Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.initWidget('.MenuBar', ['#bp_infinity', '#bp_1024', '#bp_900', '#bp_768', '#bp_600', '#bp_480', '#bp_320'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
+Muse.Utils.initWidget('#accordionu1034', ['#bp_600', '#bp_480', '#bp_320'], function(elem) { return new WebPro.Widget.Accordion(elem, {canCloseAll:true,defaultIndex:-1}); });/* #accordionu1034 */
+$('#bp_infinity').one('muse_this_bp_activate', function(){
+$('#u1714').registerBackgroundPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,32]},{"speed":[0,0],"in":[32,Infinity]}], $(this)); /* scroll effect */
+});/* scroll effects for one breakpoint */
+$( '.breakpoint' ).registerBreakpoint();/* Register breakpoints */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 }catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
 
 </script>
   <!-- RequireJS script -->
   <script src="scripts/require.js?crc=4159430777" type="text/javascript" async data-main="scripts/museconfig.js?crc=172512987" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
-  
-  <!--HTML Widget code-->
-  	
-		<script>
-		$( "#botonlogin" ).click(function(e) {
-		  if ($("#pass").val() == 'o') { e.preventDefault(); $('#overlaypass').hide(); $('.formLogin').hide(); }
-		  else  { e.preventDefault(); $('#err').replaceWith("<span id='err'>Nope</span>"); } 
-		});
-		</script>
-
    </body>
 </html>

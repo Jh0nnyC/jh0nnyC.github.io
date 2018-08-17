@@ -1,25 +1,110 @@
-<manifest alg="2" build="2017.0.1.363" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" exportTarget="other" domain="https://jh0nnyc.github.io" resolutions="1x,2x" timestamp="1534452847423">
+<manifest alg="2" build="2017.0.1.363" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" exportTarget="other" domain="Jh0nnyC.github.io" resolutions="1x,2x" timestamp="1534509046138">
   <folder name="css">
     <file name="site_global.css" crc="443350757"/>
-    <file name="index.css" crc="459634884" ref="index"/>
-    <file name="2nd-home.css" crc="3843109290" ref="2nd-home"/>
-    <file name="master_a-master.css" crc="49549666" ref="index:2nd-home"/>
+    <file name="index.css" crc="3816871351" ref="index"/>
+    <file name="master_a-master.css" crc="4144012511" ref="index"/>
+    <file name="nomq_preview_master_a-master.css" crc="329267035" ref="index"/>
+    <file name="nomq_index.css" crc="455492922" ref="index"/>
   </folder>
   <folder name="scripts">
-    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:2nd-home"/>
-    <file name="museutils.js" crc="4148063285" ref="index:2nd-home"/>
-    <file name="whatinput.js" crc="86476730" ref="index:2nd-home"/>
-    <file name="museconfig.js" crc="172512987" ref="index:2nd-home"/>
-    <file name="jquery.watch.js" crc="437028206" ref="index:2nd-home"/>
-    <file name="require.js" crc="4159430777" ref="index:2nd-home"/>
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="4148063285" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="172512987" ref="index"/>
+    <file name="jquery.watch.js" crc="437028206" ref="index"/>
+    <file name="require.js" crc="4159430777" ref="index"/>
+    <file name="jquery.musemenu.js" crc="3765830709" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4001026563" ref="index"/>
+    <file name="webpro.js" crc="3986320349" ref="index"/>
+    <file name="musewpdisclosure.js" crc="3865010892" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="3801019579" ref="index"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index"/>
+    <file name="jquery.museresponsive.js" crc="3991890305" ref="index"/>
   </folder>
   <folder name="images">
     <file name="blank.gif" crc="4208392903" ref="index"/>
-    <file name="u121-4.png" crc="4178644463" ref="index"/>
-    <file name="u121-4_2x.png" crc="472729285" ref="index"/>
-    <file name="pasted image 630x630.jpg" crc="3987120680" seo="true" ref="2nd-home"/>
-    <file name="pasted image 630x630_2x.jpg" crc="271076542" seo="true" ref="2nd-home"/>
+    <file name="u98-4.png" crc="371977085" ref="index"/>
+    <file name="u98-4_2x.png" crc="4291072272" ref="index"/>
+    <file name="hypesquad-balance-black76x76.png" crc="4167439831" seo="true" ref="index"/>
+    <file name="hypesquad-balance-black76x76_2x.png" crc="4143924573" seo="true" ref="index"/>
+    <file name="u177-4.png" crc="496818366" ref="index"/>
+    <file name="u177-4_2x.png" crc="4048172601" ref="index"/>
+    <file name="u414-4.png" crc="4116970399" ref="index"/>
+    <file name="u414-4_2x.png" crc="76575531" ref="index"/>
+    <file name="u441-4.png" crc="403823413" ref="index"/>
+    <file name="u441-4_2x.png" crc="4068441690" ref="index"/>
+    <file name="u469-4.png" crc="482583659" ref="index"/>
+    <file name="u469-4_2x.png" crc="422380261" ref="index"/>
+    <file name="u524-4.png" crc="3956635098" ref="index"/>
+    <file name="u524-4_2x.png" crc="500416463" ref="index"/>
+    <file name="matt-lamers-679346-unsplash.jpg" crc="4191927420" ref="index"/>
+    <file name="matt-lamers-679346-unsplash_2x.jpg" crc="18080903" ref="index"/>
+    <file name="u1746-7.png" crc="4283871708" ref="index"/>
+    <file name="u1746-7_2x.png" crc="306246394" ref="index"/>
+    <file name="u1760.png" crc="3853916343" ref="index"/>
+    <file name="u1760_2x.png" crc="352986162" ref="index"/>
+    <file name="u1760-r.png" crc="3853916343" ref="index"/>
+    <file name="u1760-r_2x.png" crc="352986162" ref="index"/>
+    <file name="u1662-4.png" crc="21352057" ref="index"/>
+    <file name="u1662-4_2x.png" crc="3933302720" ref="index"/>
+    <file name="matt-lamers-679346-unsplash-u1714-fr.jpg" crc="215529451" ref="index"/>
+    <file name="matt-lamers-679346-unsplash-u1714-fr_2x.jpg" crc="46594652" ref="index"/>
+    <file name="u1746-72.png" crc="342632931" ref="index"/>
+    <file name="u1746-7_2x2.png" crc="372126797" ref="index"/>
+    <file name="u17602.png" crc="3800748187" ref="index"/>
+    <file name="u1760_2x2.png" crc="350813256" ref="index"/>
+    <file name="u1760-r2.png" crc="3800748187" ref="index"/>
+    <file name="u1760-r_2x2.png" crc="350813256" ref="index"/>
+    <file name="hypesquad-balance-black67x67.png" crc="202826063" seo="true" ref="index"/>
+    <file name="hypesquad-balance-black67x67_2x.png" crc="4143924573" seo="true" ref="index"/>
+    <file name="u1746-73.png" crc="3847706611" ref="index"/>
+    <file name="u1746-7_2x3.png" crc="17081453" ref="index"/>
+    <file name="u17603.png" crc="3770634015" ref="index"/>
+    <file name="u1760_2x3.png" crc="141668966" ref="index"/>
+    <file name="u1760-r3.png" crc="3770634015" ref="index"/>
+    <file name="u1760-r_2x3.png" crc="141668966" ref="index"/>
+    <file name="hypesquad-balance-black57x57.png" crc="497755715" seo="true" ref="index"/>
+    <file name="hypesquad-balance-black57x57_2x.png" crc="4058805373" seo="true" ref="index"/>
+    <file name="u1746-74.png" crc="3845895191" ref="index"/>
+    <file name="u1746-7_2x4.png" crc="3896883809" ref="index"/>
+    <file name="u17604.png" crc="3980582524" ref="index"/>
+    <file name="u1760_2x4.png" crc="4116536994" ref="index"/>
+    <file name="u1760-r4.png" crc="3980582524" ref="index"/>
+    <file name="u1760-r_2x4.png" crc="4116536994" ref="index"/>
+    <file name="u1276-4.png" crc="4294874370" ref="index"/>
+    <file name="u1276-4_2x.png" crc="54507085" ref="index"/>
+    <file name="u1363-4.png" crc="4066946164" ref="index"/>
+    <file name="u1363-4_2x.png" crc="161224159" ref="index"/>
+    <file name="u1451-4.png" crc="3972564867" ref="index"/>
+    <file name="u1451-4_2x.png" crc="49220904" ref="index"/>
+    <file name="u1521-4.png" crc="3795679462" ref="index"/>
+    <file name="u1521-4_2x.png" crc="3959819129" ref="index"/>
+    <file name="u1583-4.png" crc="28293630" ref="index"/>
+    <file name="u1583-4_2x.png" crc="3814224907" ref="index"/>
+    <file name="hypesquad-balance-black37x37.png" crc="35375775" seo="true" ref="index"/>
+    <file name="hypesquad-balance-black37x37_2x.png" crc="279475620" seo="true" ref="index"/>
+    <file name="u1746-75.png" crc="4170882631" ref="index"/>
+    <file name="u1746-7_2x5.png" crc="4112082641" ref="index"/>
+    <file name="u17605.png" crc="113427437" ref="index"/>
+    <file name="u1760_2x5.png" crc="4164623657" ref="index"/>
+    <file name="u1760-r5.png" crc="113427437" ref="index"/>
+    <file name="u1760-r_2x5.png" crc="4164623657" ref="index"/>
+    <file name="hypesquad-balance-black30x30.png" crc="535109973" seo="true" ref="index"/>
+    <file name="hypesquad-balance-black30x30_2x.png" crc="523086712" seo="true" ref="index"/>
+    <file name="u1746-76.png" crc="3829559179" ref="index"/>
+    <file name="u1746-7_2x6.png" crc="3912928844" ref="index"/>
+    <file name="u17606.png" crc="3941160444" ref="index"/>
+    <file name="u1760_2x6.png" crc="4079634298" ref="index"/>
+    <file name="u1760-r6.png" crc="3941160444" ref="index"/>
+    <file name="u1760-r_2x6.png" crc="4079634298" ref="index"/>
+    <file name="hypesquad-balance-black24x24.png" crc="4123043914" seo="true" ref="index"/>
+    <file name="hypesquad-balance-black24x24_2x.png" crc="3783516946" seo="true" ref="index"/>
+    <file name="u1746-77.png" crc="3903034834" ref="index"/>
+    <file name="u1746-7_2x7.png" crc="11677670" ref="index"/>
+    <file name="u17607.png" crc="3875907065" ref="index"/>
+    <file name="u1760_2x7.png" crc="4121216607" ref="index"/>
+    <file name="u1760-r7.png" crc="3875907065" ref="index"/>
+    <file name="u1760-r_2x7.png" crc="4121216607" ref="index"/>
   </folder>
-  <file name="index.html" crc="416596937" seo="true" mt="1534452792944" redirect="true"/>
-  <file name="2nd-home.html" crc="3826354852" seo="true" mt="1534452792944" redirect="true"/>
+  <file name="index.html" crc="475963918" seo="true" mt="1534509006713" redirect="true"/>
 </manifest>
